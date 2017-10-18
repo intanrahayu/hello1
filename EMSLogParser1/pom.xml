@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.fourelementscapital</groupId>
   <artifactId>EMSLogParser</artifactId>
-  <version>1.1</version>
+  <version>1.2</version>
   <packaging>war</packaging>
   <name>EMSLogParser</name>
   <url>http://www.fourelementscapital.com</url>
@@ -42,29 +42,6 @@
     </site>
   </distributionManagement>  
   
-  <reporting>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.10.4</version>
-        <configuration>
-        </configuration>
-        <reportSets>
-          <reportSet>
-            <id>aggregate</id>
-			<inherited>true</inherited>
-            <configuration>
-            </configuration>
-            <reports>
-              <report>javadoc</report>
-			  <report>test-javadoc</report>
-            </reports>
-          </reportSet>
-        </reportSets>
-      </plugin>
-    </plugins>
-  </reporting> 
     
   <dependencies>
     <dependency>
@@ -95,5 +72,11 @@
 	</dependency>  	
 	
   </dependencies>
+
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+</properties>
   
 </project>
